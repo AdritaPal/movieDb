@@ -1,0 +1,15 @@
+{{getData()}}
+<div *ngFor="let i of data.results" class="movie-container">
+
+    <div className="movie">
+        <img src="{{imageAPI}}{{i.poster_path}}" alt={{i.title}} />
+        <div className="movie-info">
+            <h3>{{i.title}}</h3>
+            <span>{{i.vote_average}}</span>
+        </div>
+        <div className="movie-overview">
+            <h2>Overview:</h2>
+            <p>{{i.overview}}</p>
+        </div>
+    </div>
+</div>
